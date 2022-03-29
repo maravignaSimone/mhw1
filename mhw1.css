@@ -61,7 +61,7 @@ header nav{
     display: flex;
     align-items: center;
     font-size: 3rem;
-    width: 40%;
+    width: 35%;
 }
 
 #logo{
@@ -79,7 +79,7 @@ header nav{
 }
 
 #link a{
-    margin: 15px;
+    margin: 20px;
 }
 
 #link a:hover{
@@ -95,9 +95,13 @@ header h1{
     font-weight: inherit;
 }
 
-header h1 a{
+header h1 a.button{
     font-size: 1.3em;
     background-color: rgba(210, 105, 30, 0.7);
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 100px;
+    display: inline-block;
 }
 
 header h1 em{
@@ -110,6 +114,12 @@ header h1 strong{
     letter-spacing: 4px;
 }
 
+header h1 a.button:hover{
+    background-color: rgb(210, 105, 30);
+    cursor: pointer;
+    font-weight: bold;
+}
+
 @media (max-width: 720px) {
     header h1 strong {
         font-size: 1.5em;
@@ -119,22 +129,9 @@ header h1 strong{
         font-size: 0.9em;
     }
 
-    header h1 a{
+    header h1 a.button{
         font-size: 1em;
     }
-  }
-
-h1 a.button{
-    padding: 10px 15px;
-    border: 2px solid white;
-    border-radius: 100px;
-    display: inline-block;
-}
-
-h1 a.button:hover{
-    background-color: rgb(210, 105, 30);
-    cursor: pointer;
-    font-weight: bold;
 }
 
 #menu{
