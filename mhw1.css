@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    font-family: 'Lora', serif;
+    background-color: rgba(245, 245, 220, 0.3);
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
+}
+
+header{
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    color:white;
+
+    background-image: url(panini_header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 720px) {
+    header {
+      height: 350px;
+    }
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    padding: 20px;
+    font-family: 'Hurricane', serif;
+    font-size: 1.75em;
+    color:rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#upper-left{
+    cursor: default;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    width: 40%;
+}
+
+#logo{
+    width: 15%;
+}
+
+@media (max-width: 720px) {
+    #upper-left {
+      font-size: 1em;
+    }
+
+    #logo{
+        display: none;
+    }
+}
+
+#link a{
+    margin: 15px;
+}
+
+#link a:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header h1{
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+    z-index: 1;
+    font-weight: inherit;
+}
+
+header h1 a{
+    font-size: 1.3em;
+    background-color: rgba(210, 105, 30, 0.7);
+}
+
+header h1 em{
+    font-size: 1.25em;
+    letter-spacing: 1px;
+}
+
+header h1 strong{
+    font-size: 4.25em;
+    letter-spacing: 4px;
+}
+
+@media (max-width: 720px) {
+    header h1 strong {
+        font-size: 1.5em;
+    }
+
+    header h1 em{
+        font-size: 0.9em;
+    }
+
+    header h1 a{
+        font-size: 1em;
+    }
+  }
+
+h1 a.button{
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+h1 a.button:hover{
+    background-color: rgb(210, 105, 30);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#menu{
+    display: none;
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media (max-width: 720px) {
+    #link {
+      display: none;
+    }
+  
+    #menu {
+      display: block;
+    }
+}
+
+section{
+    font-family: 'Montserrat', serif;
+    font-size: 1em;
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+
+#main h1{
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.product-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: 20px;
+}
+
+.product img{
+    width: 80%;
+    height: auto;
+}
+
+@media (max-width: 720px) {
+    .product-list {
+        flex-direction: column;
+    }
+
+    .product{
+        margin: 10px;
+    }
+
+    .product h2{
+        margin: 0.3em 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .product {
+      width: 70%;
+    }
+}
+
+footer{
+    background-color: rgb(31, 31, 31);
+    font-family: 'Montserrat', serif;
+    font-size: 1em;
+    color:rgba(255, 255, 255, 0.8);
+    padding: 75px;
+    text-align: right;
+    font-style: italic;
+}
+
+footer p{
+    color: rgba(255, 255, 255, 0.4)
+}
+
+footer address{
+    letter-spacing: 1px;
+}
