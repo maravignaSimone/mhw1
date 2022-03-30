@@ -193,16 +193,11 @@ section{
 
     .product{
         margin: 10px;
+        width: 70%;
     }
 
     .product h2{
         margin: 0.3em 0;
-    }
-}
-
-@media (max-width: 720px) {
-    .product {
-      width: 70%;
     }
 }
 
